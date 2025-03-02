@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支持我们 - LCLU</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #1e90ff;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .qrcode-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .qrcode-item {
+            width: 260px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+
+        .qrcode-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .qrcode-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #eee;
+        }
+
+        .platform-name {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .tip-text {
+            color: #666;
+            margin: 2rem 0;
+            line-height: 1.6;
+        }
+
+        .divider {
+            height: 1px;
+            background: #eee;
+            margin: 2rem auto;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>❤️ 感谢支持</h1>
+        
+        <p class="tip-text">请使用支付宝或微信扫码捐赠<br>您的捐赠将全部投入服务器当中！<br>感谢支持！</p>
+
+        <div class="divider"></div>
+
+        <div class="qrcode-container">
+            <!-- 支付宝二维码 -->
+            <div class="qrcode-item">
+                <img src="alipay-qrcode.jpg" alt="支付宝捐款二维码">
+                <div class="platform-name">支付宝</div>
+            </div>
+
+            <!-- 微信二维码 -->
+            <div class="qrcode-item">
+                <img src="wechat-qrcode.jpg" alt="微信捐款二维码">
+                <div class="platform-name">微信支付</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
